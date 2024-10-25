@@ -70,18 +70,19 @@ const Header = ()=>{
 export default Header
 
 const Container = styled.div`
-    position: fixed;
-    top: 0px;
-    z-index: 100px;
-    width: 100%;
+    /* position: fixed;
+    top: 0px; */
+    /* z-index: 100px; */
+    /* width: 100%; */
+    /* background-color: red; */
     height: 70px;
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     @media screen and (max-width: 800px) {
-        margin-left: -30px;
+        margin-left: -40px;
     }
     
 `
