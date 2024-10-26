@@ -6,22 +6,13 @@ const TextImage = (props)=>{
         <Container>
             <Wrapper>
                 <Textimage>   
-                    <h1>{props.textLeft}</h1>
-                    <p>{props.paraLeft}</p>
+                    <h1 style={{whiteSpace: 'pre-line'}}>{props.text}</h1>
+                    <p style={{whiteSpace:'pre-line'}}>{props.para}</p>
                 </Textimage>
 
                 <ImageRight>
-                <img src={props.imageRight} alt="/" />
+                <img src={props.image} alt="/" />
                 </ImageRight>
-                <Divider>
-                    <ImageLeft>
-                        <img src={props.imageLeft} alt="" />
-                    </ImageLeft>
-                    <ImageText>
-                        <h1>{props.textRight}</h1>
-                        <p>{props.paraRIght}</p>
-                    </ImageText>
-                </Divider>
                 
             </Wrapper>
         
@@ -37,38 +28,41 @@ const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
     min-height: calc(100vh - 70px);
-    margin-block: 1em;
+    /* margin-block: 1em; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 `
 
 const Wrapper = styled.div`
-/* width: 85%; */
+width: 85%;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-between;
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+gap:10em;
 `
 const Textimage = styled.div`
-max-width: 500px;
+max-width: 400px;
 display: flex;
+flex-direction: column;
+h1{
+font-size: 35px;
+font-weight: 800;
+line-height: normal;
+line-break: auto;
+color:#40196D;
+margin-bottom: -5px;
+}
+p{
+    font-size: 18px;
+}
+ 
 
 `
 const ImageRight = styled.div`
 img{
-    width: 400px;
+    width: 500px;
 }
 `
-const Divider = styled.div`
-display:flex;
-flex-wrap: wrap;
-justify-content: space-between;
-gap: 20px;
-
-`
-const ImageLeft = styled.div`
-img{
-    width: 400px;
-}
-`
-const ImageText = styled.div``
