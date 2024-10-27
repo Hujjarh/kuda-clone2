@@ -32,6 +32,9 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width:800px) {
+        margin: 0;
+    }
 `
 
 const Wrapper = styled.div`
@@ -42,11 +45,26 @@ justify-content: center;
 align-items: center;
 margin-left: 100px;
 gap:10em;
+@media screen and (max-width:800px) {
+    width: 90%;
+    /* background-color: red; */
+
+}
 `
 const Textimage = styled.div`
-max-width: 400px;
+max-width: 500px;
 display: flex;
+margin: -30px;
 flex-direction: column;
+@media screen and (max-width:800px){
+    max-width: 100%;
+    border: 2px solid;
+    align-items:center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 -30px;
+
+}
 h1{
 font-size: 35px;
 font-weight: 800;
@@ -54,6 +72,10 @@ line-height: normal;
 line-break: auto;
 color:#40196D;
 margin-bottom: -5px;
+@media screen and (max-width:800px) {
+    font-size: 27px;
+
+}
 }
 p{
     font-size: 18px;
@@ -62,7 +84,18 @@ p{
 
 `
 const ImageRight = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 img{
     width: 500px;
+}
+@media screen and (max-width:800px) {
+    img{
+        width: 100%;
+        border: 2px solid;
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
 }
 `

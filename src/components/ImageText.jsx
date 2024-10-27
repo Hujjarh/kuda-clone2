@@ -26,6 +26,9 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width:800px) {
+        margin: 0;
+    }
 `
 
 const Divider = styled.div`
@@ -36,12 +39,26 @@ justify-content: center;
 align-items: center;
 margin-left: 100px;
 gap: 5em;
+@media screen and (max-width:800px) {
+    width: 90%;
+    flex-direction: column-reverse;
+    /* background-color: red; */
 
+}
 `
 const Imagetext = styled.div`
 max-width:500px;
 display: flex;
 flex-direction: column;
+@media screen and (max-width:800px){
+    max-width: 100%;
+    border: 2px solid;
+    align-items:center;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 -30px;
+
+}
 h1{
 font-size: 33px;
 font-weight: 800;
@@ -49,6 +66,10 @@ line-height: normal;
 line-break: auto;
 color:#40196D;
 margin-bottom: -5px;
+@media screen and (max-width:800px) {
+    font-size: 27px;
+
+}
 }
 p{
     font-size: 18px;
@@ -59,4 +80,13 @@ p{
 const ImageLeft = styled.div`
 img{
     width: 500px;
-}`
+}
+@media screen and (max-width:800px) {
+    img{
+        width: 100%;
+        border: 2px solid;
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
+}
+`

@@ -83,6 +83,7 @@ const Container = styled.div`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     @media screen and (max-width: 800px) {
         margin-left: -40px;
+        margin-right: -30px;
     }
     
 `
@@ -169,4 +170,5 @@ const SideNav = styled.div`
         align-items: center;
         cursor: pointer;
     }
+
 `
