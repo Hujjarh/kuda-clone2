@@ -5,6 +5,8 @@ import simple from '../assets/simplerLife.png'
 import manage from '../assets/manage.png'
 import piggy from '../assets/piggy.png'
 import blockCard from '../assets/blockCard.png'
+import happy from '../assets/happy.png'
+import fee from '../assets/fee.png'
 import ImageText from "../components/ImageText"
 
 
@@ -28,8 +30,12 @@ const Personal = ()=>{
         <ImageText text="Turn off access, turn on safety." 
                 image={blockCard}
                 para={"Life happens. Milk spills. Debit cards go missing. If that ever happens, you can block your missing card on the app so no one can use it. We'd like to see them try."}/>
-
-       
+        <TextImage image={happy}
+                text="We're always happy to help you."
+                para="You can chat with us on the app, slide into our DMs, tweet, leave an Instagram comment, send an email or call. However you choose to reach out, there'll always be a friendly person there to make your life easy."/>
+        <ImageText text="Fees as clear as glass." 
+                image={fee}
+                para={"We're serious about free banking, and we will never, ever charge you for anything without your consent."}/>
        
         </>
     )

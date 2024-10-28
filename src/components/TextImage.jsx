@@ -7,7 +7,7 @@ const TextImage = (props)=>{
             <Wrapper>
                 <Textimage>   
                     <h1 style={{whiteSpace: 'pre-line'}}>{props.text}</h1>
-                    <p style={{whiteSpace:'pre-line'}}>{props.para}</p>
+                    <p>{props.para}</p>
                 </Textimage>
 
                 <ImageRight>
@@ -44,7 +44,7 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 margin-left: 100px;
-gap:10em;
+gap:5em;
 @media screen and (max-width:800px) {
     width: 90%;
     /* background-color: red; */
@@ -54,7 +54,7 @@ gap:10em;
 const Textimage = styled.div`
 max-width: 500px;
 display: flex;
-margin: -30px;
+/* margin: -30px; */
 flex-direction: column;
 @media screen and (max-width:800px){
     max-width: 100%;
@@ -66,7 +66,7 @@ flex-direction: column;
 
 }
 h1{
-font-size: 35px;
+font-size: 33px;
 font-weight: 800;
 line-height: normal;
 line-break: auto;
@@ -84,9 +84,9 @@ p{
 
 `
 const ImageRight = styled.div`
-display: flex;
+/* display: flex;
 justify-content: center;
-align-items: center;
+align-items: center; */
 img{
     width: 500px;
 }
