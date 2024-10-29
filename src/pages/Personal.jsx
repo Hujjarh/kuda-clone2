@@ -17,6 +17,8 @@ import fintech from '../assets/fintech.png'
 import bbc from '../assets/bbc.png'
 import cnbc from '../assets/cnbc.png'
 import euromoney from '../assets/euromoney.png'
+import Partners from "../components/Partners"
+import '../App.css'
 
 
 const Personal = ()=>{
@@ -45,19 +47,24 @@ const Personal = ()=>{
         <ImageText text="Fees as clear as glass." 
                 image={fee}
                 para={"We're serious about free banking, and we will never, ever charge you for anything without your consent."}/>
-        <h1 style={{color:'#40196D', textAlign:'center', fontWeight:800}}>Don't just take our words for it</h1>
+        <h1 className="headings">Don't just take our words for it</h1>
         <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
         <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
         <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
     profileName="Babajide Duroshola" profileImage={fatimah}/>
         <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
     profileName="Babajide Duroshola" profileImage={fatimah}/>
-    <CompanyLogo logo={tec} />
+    <CompanyLogo logo={tec} /> 
             <CompanyLogo logo={forum}/>
             <CompanyLogo logo={fintech}/>
             <CompanyLogo logo={bbc}/>
             <CompanyLogo logo={cnbc}/>
             <CompanyLogo logo={euromoney}/>
+
+        <h1 className="headings">Our Partners</h1>
+        <Partners />
+
+        <h1 className="headings">Choose the freedom you need.</h1>
         
             </>
     )

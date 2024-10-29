@@ -21,11 +21,13 @@ export default Testimonial
 
 const Container = styled.div`
 margin-top: 2em;
-display: inline-flex;
-flex-wrap: nowrap;
-margin-bottom: 3em;
+display: inline;
+margin-bottom: 5em;
+
 `
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+display: inline-flex;
+`
 const Card = styled.div`
 /* display:flex; */
 max-width: 300px;
