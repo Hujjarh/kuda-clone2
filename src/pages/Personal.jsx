@@ -7,7 +7,16 @@ import piggy from '../assets/piggy.png'
 import blockCard from '../assets/blockCard.png'
 import happy from '../assets/happy.png'
 import fee from '../assets/fee.png'
+import fatimah from '../assets/fatimah.jpg'
 import ImageText from "../components/ImageText"
+import Testimonial from "../components/Testimonial"
+import CompanyLogo from '../components/CompanyLogo'
+import tec from '../assets/TEC.png'
+import forum from '../assets/economic-forum.png'
+import fintech from '../assets/fintech.png'
+import bbc from '../assets/bbc.png'
+import cnbc from '../assets/cnbc.png'
+import euromoney from '../assets/euromoney.png'
 
 
 const Personal = ()=>{
@@ -36,8 +45,21 @@ const Personal = ()=>{
         <ImageText text="Fees as clear as glass." 
                 image={fee}
                 para={"We're serious about free banking, and we will never, ever charge you for anything without your consent."}/>
-       
-        </>
+        <h1 style={{color:'#40196D', textAlign:'center', fontWeight:800}}>Don't just take our words for it</h1>
+        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
+        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
+        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
+    profileName="Babajide Duroshola" profileImage={fatimah}/>
+        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
+    profileName="Babajide Duroshola" profileImage={fatimah}/>
+    <CompanyLogo logo={tec} />
+            <CompanyLogo logo={forum}/>
+            <CompanyLogo logo={fintech}/>
+            <CompanyLogo logo={bbc}/>
+            <CompanyLogo logo={cnbc}/>
+            <CompanyLogo logo={euromoney}/>
+        
+            </>
     )
 }
 export default Personal
