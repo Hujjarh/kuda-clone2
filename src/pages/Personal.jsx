@@ -7,18 +7,12 @@ import piggy from '../assets/piggy.png'
 import blockCard from '../assets/blockCard.png'
 import happy from '../assets/happy.png'
 import fee from '../assets/fee.png'
-import fatimah from '../assets/fatimah.jpg'
 import ImageText from "../components/ImageText"
 import Testimonial from "../components/Testimonial"
 import CompanyLogo from '../components/CompanyLogo'
-import tec from '../assets/TEC.png'
-import forum from '../assets/economic-forum.png'
-import fintech from '../assets/fintech.png'
-import bbc from '../assets/bbc.png'
-import cnbc from '../assets/cnbc.png'
-import euromoney from '../assets/euromoney.png'
 import Partners from "../components/Partners"
 import '../App.css'
+import FeeTable from "../components/FeeTable"
 
 
 const Personal = ()=>{
@@ -48,23 +42,21 @@ const Personal = ()=>{
                 image={fee}
                 para={"We're serious about free banking, and we will never, ever charge you for anything without your consent."}/>
         <h1 className="headings">Don't just take our words for it</h1>
-        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
-        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" profileName="Babajide Duroshola" profileImage={fatimah}/>
-        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
-    profileName="Babajide Duroshola" profileImage={fatimah}/>
-        <Testimonial text= "Never thought an app would stylish become my everyday way to bank and have access to physical cash. @kudabank is sleek" 
-    profileName="Babajide Duroshola" profileImage={fatimah}/>
-    <CompanyLogo logo={tec} /> 
+        <Testimonial/>
+        
+    {/* <CompanyLogo logo={tec} /> 
             <CompanyLogo logo={forum}/>
             <CompanyLogo logo={fintech}/>
             <CompanyLogo logo={bbc}/>
             <CompanyLogo logo={cnbc}/>
-            <CompanyLogo logo={euromoney}/>
+            <CompanyLogo logo={euromoney}/> */}
+        <CompanyLogo />
 
         <h1 className="headings">Our Partners</h1>
         <Partners />
 
         <h1 className="headings">Choose the freedom you need.</h1>
+        <FeeTable />
         
             </>
     )
