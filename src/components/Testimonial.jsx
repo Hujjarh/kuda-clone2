@@ -29,7 +29,7 @@ const Testimonial = ({text, profileImage, profileName})=>{
                 </Profile>
             </Card>
             <Card>
-                <p className='text'>This is the best banking app! I’m enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I’ve made kuda my main bank account and I’m gonna refer all my friends</p>
+                <p className='text'>This is the best banking app! I'm enjoying seamless banking plus the free transfers to other banks is a thing of joy. This is what I call freedom. I've made kuda my main bank account and I’m gonna refer all my friends</p>
                 <Profile>
                 <img src={profileImage } alt="" />
                 <p>{profileName}</p>
@@ -52,6 +52,7 @@ export default Testimonial
 const Container = styled.div`
 width: 100%; 
 margin-top: 2em;
+display: flex;
 margin-bottom: 5em;
 overflow-x: hidden;
 margin-bottom: 5em;
@@ -59,16 +60,16 @@ margin-bottom: 5em;
 `
 const Wrapper = styled.div`
  display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: nowrap;
-    animation: scroll 10s linear infinite;  
+    animation: scroll 20s linear infinite;  
 
     @keyframes scroll {
         from {
             transform: translateX(0);
         }
         to {
-            transform: translateX(-100%);
+            transform: translateX(-50%);
         }
     }
 
