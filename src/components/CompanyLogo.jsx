@@ -21,15 +21,16 @@ const CompanyLogo = (props)=>{
 }
 export default CompanyLogo
 const Container = styled.div`
-min-width: 400px;
+width: 90%;
 /* height: 100px; */
 display: flex;
 justify-content:space-between;
 /* flex-direction: row; */
 flex-wrap: wrap;
 /* background-color: red; */
-padding-inline: 10px;
-margin: 30px;
+/* padding-inline: 10px; */
+margin-left: auto;
+margin-right: auto;
 /* overflow: auto; */
 align-items: center;
 @media screen and (max-width:800px) {

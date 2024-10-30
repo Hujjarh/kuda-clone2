@@ -14,6 +14,34 @@ const Testimonial = ({text, profileImage, profileName})=>{
                 </Profile>
             </Card>
             <Card>
+                <p className='text'>Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah</p>
+                <Profile>
+                <img src={fatimah} alt="" />
+                <p>Mu'azu Muhammad Kudu</p>
+                </Profile>
+            </Card>
+            <Card>
+                <p className='text'>Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah</p>
+                <Profile>
+                <img src={fatimah} alt="" />
+                <p>Mu'azu Muhammad Kudu</p>
+                </Profile>
+            </Card>
+            <Card>
+                <p className='text'>Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah</p>
+                <Profile>
+                <img src={fatimah} alt="" />
+                <p>Mu'azu Muhammad Kudu</p>
+                </Profile>
+            </Card>
+            <Card>
+                <p className='text'>Well done to the guys at @kudabank had a dispensing error on Friday night and reached out to them on Sunday... 48 working hours after and my money is back in my account... Special shout out to Maxwell and Norah</p>
+                <Profile>
+                <img src={fatimah} alt="" />
+                <p>Mu'azu Muhammad Kudu</p>
+                </Profile>
+            </Card>
+            <Card>
                 <p className='text'>Just joined the best Digital Bank in Nigeria I have no complaints whatsoever since i started using Kuda</p>
                 <Profile>
                 <img src={profileImage } alt="" />
@@ -65,10 +93,10 @@ const Wrapper = styled.div`
     animation: scroll 20s linear infinite;  
 
     @keyframes scroll {
-        from {
+        0% {
             transform: translateX(0);
         }
-        to {
+        50% {
             transform: translateX(-50%);
         }
     }

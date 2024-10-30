@@ -169,7 +169,7 @@ const SideNav = styled.div`
         display: flex;
         align-items: center;
         cursor: pointer;
-        border: 2px solid red;
+        /* border: 2px solid red; */
 
     }
 

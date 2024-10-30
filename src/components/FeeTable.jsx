@@ -16,7 +16,7 @@ const Container = styled.div`
 text-align: center;
 img{
     @media screen and (max-width:800px) {
-    max-width: 500px;
+    max-width: 400px;
 }
 }
 

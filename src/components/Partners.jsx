@@ -28,7 +28,7 @@ display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
 gap: 30px;
-margin: 20px;
+margin:0 auto;
 img{
     width: 140px;
 }
