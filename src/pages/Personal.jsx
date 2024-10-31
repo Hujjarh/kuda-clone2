@@ -57,6 +57,8 @@ const Personal = ()=>{
 
         <h1 className="headings">Choose the freedom you need.</h1>
         <FeeTable />
+
+        <h1 className="headings"> More for you</h1>
         
             </>
     )
