@@ -18,6 +18,9 @@ const SideBar = ({toggle, setToggle})=>{
         <Link to="/companies" onClick={test}>
         <nav>Company</nav>
         </Link>
+        <Link to="/help" onClick={test}>
+        <nav>Help</nav>
+        </Link>
         </Container>
         
         </>
